@@ -1,0 +1,21 @@
+{
+  "description": "Submit Form",
+  "FormsCategory": "Forms",
+  "FormsUrl": "https://demoqa.com/forms",
+  "practiceFormWidget": "Practice Form",
+  "practiceFormUrl": "https://demoqa.com/automation-practice-form",
+  "firstName": "Gerimedica",
+  "lastName": "BV",
+  "email": "test@test.com",
+  "gender": "Male",
+  "mobileNumber": "0123456789",
+  "dateOfBirth": "15 January,1990",
+  "subjects": ["Playwright Assignment"],
+  "hobbies": [
+    "Reading"
+  ],
+  "picturePath": "utils/test_data/Playwright_Udemy.jpeg",
+  "currentAddress": "Netherlands",
+  "state": "NCR",
+  "city": "Delhi"
+}

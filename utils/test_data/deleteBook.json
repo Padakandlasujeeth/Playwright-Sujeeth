@@ -1,0 +1,29 @@
+{
+    "test_cases": [
+      {
+        "test_case": "Positive - Delete Book",
+        "input": {
+          "userId": "84d85106-f5d8-448e-8424-4db4eba4abaa",
+          "isbn": "9781449325862"
+        },
+        "expectedResponse": "no error"
+      },
+      {
+        "test_case": "Negative - Delete Book of another User",
+        "input": {
+          "userId": "21172166-b250-46cb-9674-751adc36d18a",
+          "isbn": "9781449325862"
+        },
+        "expectedResponse": "User not authorized!"
+      },
+      {
+        "test_case": "Negative - Delete Book with invalid isbn",
+        "input": {
+          "userId": "84d85106-f5d8-448e-8424-4db4eba4abaa",
+          "isbn": "123"
+        },
+        "expectedResponse": "ISBN supplied is not available in User's Collection!"
+      }
+    ]
+  }
+  

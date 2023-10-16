@@ -1,0 +1,53 @@
+{
+    "test_cases": [
+      {
+        "test_case": "Positive - Add List of Books",
+        "input": {
+          "userId": "84d85106-f5d8-448e-8424-4db4eba4abaa",
+          "isbn": ["9781449325862","9781449331818","9781449337711"]
+        },
+        "expectedResponse": "no error"
+      },
+      {
+        "test_case": "Positive - Add Single Book",
+        "input": {
+          "userId": "84d85106-f5d8-448e-8424-4db4eba4abaa",
+          "isbn": ["9781449325862"]
+        },
+        "expectedResponse": "no erroe"
+      },
+      {
+        "test_case": "Negative - Add Single Book to different exising userId",
+        "input": {
+          "userId": "21172166-b250-46cb-9674-751adc36d18a",
+          "isbn": ["9781449325862"]
+        },
+        "expectedResponse": "User not authorized!"
+      },
+      {
+        "test_case": "Negative - Add Single Book to non-exising/invalid userId",
+        "input": {
+          "userId": "123",
+          "isbn": ["9781449325862"]
+        },
+        "expectedResponse": "User Id not correct!"
+      },
+      {
+        "test_case": "Negative - Add Single Book which doesnt exist or invalid isbn",
+        "input": {
+          "userId": "84d85106-f5d8-448e-8424-4db4eba4abaa",
+          "isbn": ["11234"]
+        },
+        "expectedResponse": "ISBN supplied is not available in Books Collection!"
+      },
+      {
+        "test_case": "Positive - Add Duplicate Book",
+        "input": {
+          "userId": "84d85106-f5d8-448e-8424-4db4eba4abaa",
+          "isbn": ["9781449325862","9781449331818","9781449331818"]
+        },
+        "expectedResponse": "ISBN already present in the User's Collection!"
+      }
+    ]
+  }
+  

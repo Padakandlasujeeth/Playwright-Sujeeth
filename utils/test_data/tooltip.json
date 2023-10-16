@@ -1,0 +1,8 @@
+{
+    "description": "Tooltip",
+    "widgetCategory": "Widgets",
+    "widgetUrl": "https://demoqa.com/widgets",
+    "toolTipWidget": "Tool Tips",
+    "toolTipUrl":"https://demoqa.com/tool-tips",
+    "toolTipText": "You hovered over the Button"
+  }

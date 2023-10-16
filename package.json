@@ -1,0 +1,34 @@
+{
+  "name": "sujeeth-playwright-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:multibrowser": "npx playwright test",
+    "test:all": "npx playwright test --project=Chrome",
+    "test:serial": "npx playwright test --workers=1 --project=Chrome",
+    "test:headMode": "npx playwright test --workers=1 --project=Chrome --headed",
+    "test:parallel": "npx playwright test --project=Chrome",
+    "test:api": "npx playwright test --grep @api --project=Chrome",
+    "test:visual": "npx playwright test tests/visualComparision --project=Chrome",
+    "test:functional": "npx playwright test tests/functional --project=Chrome",
+    "test:e2e": "npx playwright test tests/e2e --project=Chrome",
+    "test:record": "npx playwright codegen"
+  },
+  "keywords": [],
+  "author": "Sai Sujeeth Padakandla",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.8.4",
+    "@types/puppeteer": "^7.0.4",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "exceljs": "^4.3.0",
+    "lighthouse": "^11.2.0",
+    "node-fetch": "^3.3.2",
+    "rimraf": "^5.0.5"
+  }
+}
